@@ -149,7 +149,7 @@ public function setPrijs(string $Prijs): void
         }
 
         // Retourneer array met personen
-        return $album;
+        return $albums;
     }
 
 }

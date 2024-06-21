@@ -11,22 +11,19 @@
 <table>
     <tr>
         <th>ID</th>
-        <th>naam</th>
-        <th>artiest</th>
-        <th>release date</th>
+        <th>albumID</th>
+        <th>titel</th>
+        <th>duur</th>
         <th>URL</th>
-        <th>afbeelding</th>
-        <th>prijs</th>
+
     </tr>
-    <?php foreach ($albums as $album): ?>
+    <?php foreach ($nummers as $nummer): ?>
         <tr>
-            <td><?= $album->getID() ?></td>
-            <td><?= $album->getNaam() ?></td>
-            <td><?= $album->getArtiesten() ?></td>
-            <td><?= $album->getReleaseDatum() ?></td>
-            <td><?= $album->getURL() ?></td>
-            <td><img src="public/img/<?= $album->getAfbeelding() ?>" alt=""></td>
-            <td><?= $album->getPrijs() ?></td>
+            <td><?= $nummer->getID() ?></td>
+            <td><?= $nummer->getalbumID() ?></td>
+            <td><?= $nummer->gettitel() ?></td>
+            <td><?= $nummer->getduur() ?></td>
+            <td><?= $nummer->getURL() ?></td>
         </tr>
     <?php endforeach; ?>
 </table>
